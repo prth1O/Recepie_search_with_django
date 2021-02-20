@@ -1,0 +1,203 @@
+.navbar-default .navbar-brand-centered a:hover {
+    background-color: transparent !important;
+    color: #444a5a !important;
+    border-radius: unset !important;
+}
+.navbar-default .navbar-nav > li > a {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 12px 2px 0;
+}
+#menu-center {
+    background: #444a5a none repeat scroll 0 0;
+    border-bottom: 2px solid #444a5a;
+    margin: 0 -15px;
+    display: none;
+}
+.navbar-default #menu-center .navbar-nav > li > a {
+    font-weight: 300;
+}
+#navbar-brand-centered a{
+	color: #444a5a !important;
+}
+.sub-title-home {
+    padding: 30px 0 25px;
+}
+.sub-title-home h2 {
+    color: #fff;
+    font-size: 36px;
+}
+.block {
+    border-radius: 0;
+    margin: 0 0 10px;
+    padding: 0 20px 20px 30px;
+}
+.block-title {
+   	background-color: #fff;
+	border-radius: 0;
+	color: #444a5a;
+	padding: 5px 5px 10px;
+}
+.block-title h3 {
+    line-height: 30px;
+  	margin: 17px 0 0;
+  	font-size: 20px;
+}
+.home .col-md-4 {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.home .desc {
+    min-height: 105px;
+    font-size: 17px;
+    font-weight: 300;
+    text-align: center;
+}
+.logos {
+    margin-top: 20px;
+}
+.container-fluid.bgr {
+    background-image: url('/images/bgr-w.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+  	padding-bottom: 70px;
+}
+.container-fluid.bgr.inside.acc,
+.container-fluid.bgr.inside.msgs,
+.container-fluid.bgr.inside.apps,
+.container-fluid.bgr.inside.services,
+.container-fluid.bgr.inside.dashboard{
+    background-image: none;
+  	padding-bottom: 0px;
+}
+.inside.acc .col-md-10.col-md-offset-1,
+.inside.msgs .col-md-10.col-md-offset-1,
+.inside.apps .col-md-10.col-md-offset-1,
+.inside.services .col-md-10.col-md-offset-1,
+.inside.dashboard .col-md-10.col-md-offset-1{
+    margin-top: 0px;
+}
+.home {
+    background-color: #fff;
+}
+.sign-up,
+.sign-up:hover{
+    border: 1px solid #c3d0db;
+    border-radius: 6px;
+    color: #7aca25 !important;
+    float: right;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 20px 10px 15px 0;
+    padding: 5px 20px 5px 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.back-btn{
+  	border: 1px solid #c3d0db;
+    border-radius: 6px;
+    color: #fff !important;
+    float: left;
+    font-size: 16px;
+    font-weight: 500;
+    margin: -59px 0 0 -30px;
+    padding: 5px 20px 5px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    background: transparent;
+}
+.inside .sign-up {
+    border: 1px solid #c3d0db;
+}
+.inside .col-md-10.col-md-offset-1 {
+    background: #fff;
+  	margin-top: 80px;
+}
+#loginFormMenu.dropdown-menu {
+    margin: 5px 10px 0;
+}
+.more a {
+    background: none;
+    border: 0 none;
+    border-radius: 6px;
+    color: #fff;
+    float: right;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 5px 8px -5px 0;
+    padding: 4px 12px 3px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #7aca25;
+}
+.desc a {
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    background: url("../img/right.png") no-repeat right 3px;
+    width: 70px;
+    margin: 10px auto;
+    color: #7aca25;
+}
+.desc a:hover {
+  	text-decoration:none;
+}
+.api .table th {
+    background: #444a5a none repeat scroll 0 0;
+}
+.triangle-bottom-table {
+    border-color: #444a5a transparent transparent;
+}
+.api td {
+    background: #ececec none repeat scroll 0 0;
+}
+.api .table > tbody > tr > td, 
+.api .table > tbody > tr > th, 
+.api .table > tfoot > tr > td, 
+.api .table > tfoot > tr > th, 
+.api .table > thead > tr > td, 
+.api .table > thead > tr > th {
+    border-bottom: 1px solid #dedede;
+}
+.inside .navbar {
+    background-color: #fff;
+}
+.inside h1,
+.inside .sub h2{
+    text-align: center;
+}
+.docs-content h1{
+	text-align: left;
+}
+.container-fluid.bgr.home, .home {
+    background-color: #fff;
+}
+/* Footer */
+.footer {
+    background-color: #a0a5b1;
+    bottom: 0;
+    height: 50px;
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    font-size: 13px;    
+  	text-transform: capitalize;
+}
+.footer .list-inline {
+    margin-left: 0;
+}
+.footer .list-inline > li {
+    padding: 0 10px;
+}
+.footer ul.list-inline li:first-child {
+    display: block;
+    float: left;
+    padding: 1px 5px 0 0;
+}
+.footer .container-fluid {
+    padding-top: 15px;
+}
+.footer .list-inline .ico-app {
+    margin: -2px 0 0;
+}

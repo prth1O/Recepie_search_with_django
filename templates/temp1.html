@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% block content %}
+<head>
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head><body>
+<div class="card-body" >
+	<h3>Searching by keyword</h3>
+	<span data-line="1" class="glyphicon glyphicon-chevron-up"></span>
+  <div class="desc">Enter a what you have eaten, like <span>"coffee and croissant"</span> or <span>"chicken enchilada"</span> to see how it works. We have accurate data tens of thousands of foods, including international dishes.</div>
+
+<form  action="{% url 'home' %}" method="post">
+{% csrf_token%}
+
+  <input type="text" class="search q" name="search_q">
+	<div class="search-btn-line">
+  	  <input type="submit" class="btn btn-primary analyze-demo" value="Search">
+  </div>
+	</form>
+</div>
+<div class="foodresult"><h4>Food Database</h4>
+	<table class="table-res-recipe">
+
+		 <thead>
+			  <tr>
+					   <th>Image</th>      <th>Qty</th>      <th>Unit</th>      <th class="col-6">Food</th> <th class="col-6">Ingredients</th>      <th>Energy</th>      <th class="col-2">Nutrients</th>    </tr>  </thead>
+						 {% for i in res %}
+
+						<tbody>
+							 <tr>	<th>
+								<a href="{{i.url}}" target='_blank'>
+							 <img src="{{i.img}}"></a></th>
+							 	<th>{{i.totalWeight}}</th>   <th>g</th>
+								 <th>{{i.label}}</th>
+								 <th>{%for ing in i.ingr %}
+									 <li>{{ing}}</li>
+									 {%endfor%}
+								 </th>
+								 <th><b>{{i.cal}} kcal</b></th>
+							 <th class="last">
+
+								 Protein: <b class="mes">{{i.Neut.Protein}} g</b>
+								 <br>Fat: <b class="mes">{{i.Neut.Fat}} g</b>
+								 <br>Carbs: <b class="mes">{{i.Neut.Carbs}} g</b>
+
+								 <br>
+							 </th></tr>
+
+								 <tr>	<th>
+
+{% endfor  %}
+</body>
+</html>
+{% endblock content %}
